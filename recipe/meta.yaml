@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,11 +23,11 @@ requirements:
   build:
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-matrix
@@ -41,7 +41,7 @@ requirements:
     - r-tweedie
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-matrix
     - r-biglm
     - r-coda
@@ -59,7 +59,7 @@ test:
 
 about:
   home: https://github.com/actuaryzhang/cplm
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Likelihood-based and Bayesian methods for various compound Poisson linear models based
     on Zhang, Yanwei (2013) <https://link.springer.com/article/10.1007/s11222-012-9343-7>.
   license_family: GPL3
