@@ -59,7 +59,7 @@ test:
 
 about:
   home: https://github.com/actuaryzhang/cplm
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Likelihood-based and Bayesian methods for various compound Poisson linear models based
     on Zhang, Yanwei (2013) <https://link.springer.com/article/10.1007/s11222-012-9343-7>.
   license_family: GPL3
