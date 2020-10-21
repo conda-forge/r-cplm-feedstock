@@ -1,4 +1,4 @@
-{% set version = '0.7-8' %}
+{% set version = "0.7-9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cplm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cplm/cplm_{{ version }}.tar.gz
-  sha256: 5cf5a8f9399a8810043781ede7b0b443388d91f7f9242a48c30ffb85791f743f
+  sha256: d2539056a71250a248f16f8e390a805dcec4ea17220d596329eb43817330f514
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -60,10 +60,9 @@ test:
 about:
   home: https://github.com/actuaryzhang/cplm
   license: GPL-2.0-or-later
-  summary: Likelihood-based and Bayesian methods for various compound Poisson linear models based
-    on Zhang, Yanwei (2013) <https://link.springer.com/article/10.1007/s11222-012-9343-7>.
+  summary: Likelihood-based and Bayesian methods for various compound Poisson linear models based on Zhang, Yanwei (2013) <https://link.springer.com/article/10.1007/s11222-012-9343-7>.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
