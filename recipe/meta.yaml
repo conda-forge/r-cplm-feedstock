@@ -1,4 +1,4 @@
-{% set version = "0.7-9" %}
+{% set version = "0.7-10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cplm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cplm/cplm_{{ version }}.tar.gz
-  sha256: d2539056a71250a248f16f8e390a805dcec4ea17220d596329eb43817330f514
+  sha256: b3533e031f79579ce31d7dd3765ff0ea3b44435fafc258d84a18162340981257
 
 build:
   merge_build_host: true  # [win]
