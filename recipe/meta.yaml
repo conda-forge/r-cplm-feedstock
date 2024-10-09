@@ -1,4 +1,4 @@
-{% set version = "0.7-12" %}
+{% set version = "0.7-12.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cplm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cplm/cplm_{{ version }}.tar.gz
-  sha256: ac7bfe21c13ceb5c1a8b4b23955febdd2948fcba5ac2a60906c907aaa7040bd4
+  sha256: 8e95c1610aa76ca8a3bf3645ab7eeffadde1af6fe5941b483bfdcaa6aa75297d
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
